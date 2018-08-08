@@ -11,7 +11,7 @@ namespace FluentBootstrap.Buttons
 {
     public class Button : Tag,
         IHasIconExtensions, IHasButtonExtensions, IHasButtonStateExtensions, 
-        IHasDisabledAttribute, IHasTextContent, IHasValueAttribute,
+        IHasDisabledAttribute, IHasTextContent, IHasValueAttribute, IHasTitleAttribute, IHasNameAttribute,
         ICanCreate<Badge>
     {
         private ButtonGroup _buttonGroup;
