@@ -70,6 +70,18 @@ namespace FluentBootstrap
             return builder;
         }
 
+        public static ComponentBuilder<TConfig, TForm> SetMultipart<TConfig, TForm>(this ComponentBuilder<TConfig, TForm> builder, bool multipart = true)
+            where TConfig : BootstrapConfig
+            where TForm : Form
+        {
+            if (multipart)
+            {
+                builder.Component.MergeAttribute("enctype", "multipart/form-data");
+            }
+            else builder.Component.MergeAttribute("enctype", string.Empty);
+            return builder;
+        }
+
         // FieldSet
 
         public static ComponentBuilder<TConfig, FieldSet> FieldSet<TConfig, TComponent>(this BootstrapHelper<TConfig, TComponent> helper)
@@ -129,6 +141,17 @@ namespace FluentBootstrap
             {
                 builder.Component.ToggleCss(Css.HasFeedback, true);
                 builder.Component.Icon = icon;
+            }
+            return builder;
+        }
+
+        public static ComponentBuilder<TConfig, FormGroup> SetFeedback<TConfig>(this ComponentBuilder<TConfig, FormGroup> builder, IconFontAwesome icon)
+            where TConfig : BootstrapConfig
+        {
+            if (icon != IconFontAwesome.None)
+            {
+                builder.Component.ToggleCss(Css.HasFeedback, true);
+                builder.Component.IconFontAwesome = icon;
             }
             return builder;
         }
@@ -201,6 +224,17 @@ namespace FluentBootstrap
             {
                 builder.Component.ToggleCss(Css.HasFeedback, true);
                 builder.Component.Icon = icon;
+            }
+            return builder;
+        }
+
+        public static ComponentBuilder<TConfig, Input> SetFeedback<TConfig>(this ComponentBuilder<TConfig, Input> builder, IconFontAwesome icon)
+            where TConfig : BootstrapConfig
+        {
+            if (icon != IconFontAwesome.None)
+            {
+                builder.Component.ToggleCss(Css.HasFeedback, true);
+                builder.Component.IconFontAwesome = icon;
             }
             return builder;
         }

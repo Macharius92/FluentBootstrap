@@ -36,6 +36,8 @@ namespace FluentBootstrap
         [Description("tel")]
         Tel,
         [Description("color")]
-        Color
+        Color,
+        [Description("file")]
+        File
     }
 }
