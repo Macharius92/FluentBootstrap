@@ -2,7 +2,9 @@
 
 ## ** Looking For A Maintainer **
 
-This project isn't "dead", but at the same time I won't be doing much more to it beyond fixing bugs. It's complete and production-worthy but my personal interests have shifted more towards code generation ([scripting](https://github.com/daveaglick/Scripty), [static sites](http://wyam.io), etc.) and I am unable to give this project the attention it deserves going forward. If you're interested in taking over, please drop me a line by opening an issue. 
+This project isn't "dead", but at the same time I won't be doing much more to it beyond fixing bugs. It's complete and production-worthy but my personal interests have shifted more towards code generation ([scripting](https://github.com/daveaglick/Scripty), [static sites](http://wyam.io), etc.) and I am unable to give this project the attention it deserves going forward. If you're interested in taking over, please drop me a line by opening an issue.
+
+This fork of the original FluentBootstrap is my first try with Git.
 
 ## Overview
 
