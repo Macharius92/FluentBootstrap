@@ -12,5 +12,10 @@ namespace FluentBootstrap.Icons
             : base(helper, "span", Css.Glyphicon, icon.GetDescription())
         {
         }
+
+        internal IconSpan(BootstrapHelper helper, IconFontAwesome icon)
+            : base(helper, "span", CssFontAwesome.Fa,icon.GetDescription())
+        {
+        }
     }
 }

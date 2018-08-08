@@ -29,6 +29,7 @@ namespace FluentBootstrap.Forms
         }
         
         public Icon Icon { get; set; }
+        public IconFontAwesome IconFontAwesome { get; set; } = IconFontAwesome.None;
 
         public bool? Horizontal { get; set; }   // null = same as the form, or false if no form
 
@@ -110,6 +111,18 @@ namespace FluentBootstrap.Forms
             {
                 Component icon = GetHelper().Icon(Icon).AddCss(Css.FormControlFeedback).Component;
                 if(_columnWrapper == null)
+                {
+                    AddChildAtEnd(icon);
+                }
+                else
+                {
+                    _columnWrapper.AddChildAtEnd(icon);
+                }
+            }
+            else if (IconFontAwesome != IconFontAwesome.None)
+            {
+                Component icon = GetHelper().Icon(IconFontAwesome).AddCss(Css.FormControlFeedback).Component;
+                if (_columnWrapper == null)
                 {
                     AddChildAtEnd(icon);
                 }

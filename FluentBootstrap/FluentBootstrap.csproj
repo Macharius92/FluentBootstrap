@@ -12,6 +12,10 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,6 +80,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Css.tt</DependentUpon>
     </Compile>
+    <Compile Include="CssFontAwesome.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CssFontAwesome.tt</DependentUpon>
+    </Compile>
     <Compile Include="Dropdowns\Dropdown.cs" />
     <Compile Include="Dropdowns\DropdownDivider.cs" />
     <Compile Include="Dropdowns\DropdownExtensions.cs" />
@@ -116,6 +125,11 @@
     <Compile Include="Html\HtmlExtensions.cs" />
     <Compile Include="Html\Paragraph.cs" />
     <Compile Include="ICanCreate.cs" />
+    <Compile Include="Icons\IconFontAwesome.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IconFontAwesome.tt</DependentUpon>
+    </Compile>
     <Compile Include="Icons\Icon.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -249,6 +263,15 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Css.cs</LastGenOutput>
     </None>
+    <None Include="CssFontAwesome.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CssFontAwesome.cs</LastGenOutput>
+    </None>
+    <None Include="fonts\fontawesome-webfont.eot" />
+    <None Include="fonts\fontawesome-webfont.ttf" />
+    <None Include="fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\fontawesome-webfont.woff2" />
+    <None Include="fonts\FontAwesome.otf" />
     <None Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="fonts\glyphicons-halflings-regular.ttf" />
     <None Include="fonts\glyphicons-halflings-regular.woff" />
@@ -257,7 +280,9 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Icon.cs</LastGenOutput>
     </None>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-2.1.3.min.map" />
   </ItemGroup>
   <ItemGroup>
@@ -268,7 +293,14 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <None Include="Icons\IconFontAwesome.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IconFontAwesome.cs</LastGenOutput>
+    </None>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.3.intellisense.js" />

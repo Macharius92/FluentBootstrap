@@ -12,11 +12,14 @@ namespace FluentBootstrap.Forms
     {
         public Icon Icon { get; set; }
 
+        public IconFontAwesome IconFontAwesome { get; set; }
+
         internal Input(BootstrapHelper helper, FormInputType inputType)
             : base(helper, "input", Css.FormControl)
         {
             OutputEndTag = false;
             Icon = Icon.None;
+            IconFontAwesome = IconFontAwesome.None;
             MergeAttribute("type", inputType.GetDescription());
         }
 
@@ -27,6 +30,7 @@ namespace FluentBootstrap.Forms
             {
                 GetHelper().Icon(Icon).AddCss(Css.FormControlFeedback).Component.StartAndFinish(writer);
             }
+            else if (IconFontAwesome != IconFontAwesome.None) GetHelper().Icon(IconFontAwesome).AddCss(Css.FormControlFeedback).Component.StartAndFinish(writer);
 
             base.OnFinish(writer);
         }
