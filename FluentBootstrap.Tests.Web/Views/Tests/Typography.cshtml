@@ -1,4 +1,6 @@
-﻿@using (Html.Bootstrap().Container().Begin())
+﻿@using FluentBootstrap.Internals
+@using FluentBootstrap.Typography
+@using (Html.Bootstrap().Container().Begin())
 {
     @Html.Bootstrap().Heading1("Headings")
     using (Html.Bootstrap().Div().SetId("test-heading-levels").Begin())
@@ -134,5 +136,16 @@
             @list.DescriptionTerm("One")
             @list.Description("Two")
         }
+    }
+
+    <hr />
+
+    @Html.Bootstrap().Heading1("Base Typo Items")
+    using (Html.Bootstrap().Div().SetId("test-typo-items").Begin())
+    {
+        @Html.Bootstrap().Abbreviation("Title", "Text").SetInitialism()
+        @Html.Bootstrap().Cite("Title", "Text")
+        @Html.Bootstrap().Blockquote("Mon cul", "Toto").SetReverse()
+        @Html.Bootstrap().Preformatted("Coucou").SetScrollable(false)
     }
 }

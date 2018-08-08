@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using FluentBootstrap.Links;
 
 namespace FluentBootstrap.Images
 {
@@ -27,10 +24,10 @@ namespace FluentBootstrap.Images
         protected override void OnStart(TextWriter writer)
         {
             // Build the src
-            StringBuilder src = new StringBuilder("http://placehold.it/" + Width.ToString());
+            StringBuilder src = new StringBuilder("http://placehold.it/" + Width);
             if (Height != null)
             {
-                src.Append("x" + Height.ToString());
+                src.Append("x" + Height);
             }
             if (!string.IsNullOrWhiteSpace(BackgroundColor))
             {

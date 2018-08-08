@@ -68,6 +68,13 @@ namespace FluentBootstrap.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        public static void AssertException<TView, TException>()
+            where TView : WebViewPage, new()
+            where TException : Exception
+        {
+            Assert.Throws<TException>(() => Render<TView>());
+        }
+
         public static void AssertMvcHtml<TView>(string containerId, string expected, bool collapsed = false)
             where TView : WebViewPage<ViewModel>, new()
         {

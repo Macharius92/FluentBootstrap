@@ -29,6 +29,15 @@ namespace FluentBootstrap.Tests
         }
 
         [Test]
+        public void ButtonFaIconProducesCorrectHtml()
+        {
+            TestHelper.AssertHtml<ASP._Views_Tests_Icons_cshtml>("test-button-faicon",
+                @"<button type=""button"" class=""btn btn-default"">
+   <span class=""fa fa-facebook""></span> Icon Button
+  </button>");
+        }
+
+        [Test]
         public void LinkButtonIconProducesCorrectHtml()
         {
             TestHelper.AssertHtml<ASP._Views_Tests_Icons_cshtml>("test-link-button-icon",

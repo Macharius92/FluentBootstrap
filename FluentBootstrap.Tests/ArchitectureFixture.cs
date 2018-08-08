@@ -15,7 +15,7 @@ namespace FluentBootstrap.Tests
         public void AlternateModelProducesCorrectHtml()
         {
             TestHelper.AssertHtml<ASP._Views_Tests_Architecture_cshtml>("test-alternate-model",
-@"<form role=""form"" method=""post"">
+@"<form role=""form"" method=""post"" enctype=""multipart/form-data"">
    <div class=""form-group"">
     <label for=""Foo"" class=""control-label"">Foo</label>
     <div><partial></partial>

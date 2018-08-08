@@ -52,6 +52,20 @@
 
     <hr />
 
+    @Html.Bootstrap().Heading1("Left Menu")
+    using (Html.Bootstrap().Div().SetId("test-left-menu").Begin())
+    {
+        using (var dropdown = Html.Bootstrap().Dropdown("Left").SetMenuLeft().Begin())
+        {
+            @dropdown.DropdownHeader("Header")
+            @dropdown.DropdownDivider()
+            @dropdown.DropdownLink("A")
+            @dropdown.DropdownLink("B", "http://www.google.com")
+        }
+    }
+
+    <hr />
+
     @Html.Bootstrap().Heading1("Disabled")
     using (Html.Bootstrap().Div().SetId("test-disabled").Begin())
     {

@@ -1,0 +1,10 @@
+﻿@using FluentBootstrap;
+
+@using (Html.Bootstrap().Container().Begin())
+{
+    @Html.Bootstrap().Heading1("Placeholder only TextColor")
+    using (Html.Bootstrap().Div().SetId("test-placeholder-only-textcolor").Begin())
+    {
+        @Html.Bootstrap().Placeholder(200, 40).SetText("Placeholder!").SetColors(string.Empty, "CC0000").SetHref("http://www.google.com").SetAlt("This is my placeholder")
+    }
+}

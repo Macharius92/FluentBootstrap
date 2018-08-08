@@ -45,4 +45,21 @@
             @pageHeader.Label("A label")
         }
     }
+
+    <hr />
+
+    @Html.Bootstrap().Heading1("Navbar with some items 1")
+    using (Html.Bootstrap().Div().SetId("test-navbar-with-items1").Begin())
+    {
+        using (var navbar = Html.Bootstrap().Navbar().Begin())
+        {
+            using (var dropdown = navbar.Dropdown("Dropdown").Begin())
+            {
+                @dropdown.DropdownLink("A")
+                @dropdown.DropdownLink("B")
+            }
+            @navbar.NavbarLink("A")
+            @navbar.NavbarLink("B")
+        }
+    }
 }

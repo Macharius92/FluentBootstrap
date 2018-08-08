@@ -51,7 +51,7 @@ namespace FluentBootstrap.Internals
 
         public static void Finish(this Component component, TextWriter writer)
         {
-            component.Start(writer);
+            component.Finish(writer);
         }
 
         public static void StartAndFinish(this Component component, TextWriter writer)

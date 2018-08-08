@@ -21,6 +21,10 @@
     <IISExpressUseClassicPipelineMode />
     <NuGetPackageImportStamp>ddb4a968</NuGetPackageImportStamp>
     <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -156,6 +160,7 @@
     <Content Include="Views\Tests\Images.cshtml" />
     <Content Include="Views\MvcTests\MvcForms.cshtml" />
     <Content Include="Views\Tests\Links.cshtml" />
+    <Content Include="Views\Tests\ImagesException1.cshtml" />
     <None Include="Views\Tests\Typography.cshtml" />
     <None Include="Views\Tests\Buttons.cshtml" />
     <None Include="Views\Tests\Dropdowns.cshtml" />
