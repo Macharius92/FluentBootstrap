@@ -109,6 +109,7 @@
     <Compile Include="MiscFixture.cs" />
     <Compile Include="NavbarsFixture.cs" />
     <Compile Include="NavsFixture.cs" />
+    <Compile Include="PanelsFixture.cs" />
     <Compile Include="PagersFixture.cs" />
     <Compile Include="PaginationsFixture.cs" />
     <Compile Include="ProgressBarsFixture.cs" />

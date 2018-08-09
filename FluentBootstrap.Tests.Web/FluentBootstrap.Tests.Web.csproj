@@ -161,6 +161,7 @@
     <Content Include="Views\MvcTests\MvcForms.cshtml" />
     <Content Include="Views\Tests\Links.cshtml" />
     <Content Include="Views\Tests\ImagesException1.cshtml" />
+    <Content Include="Views\Tests\Panels.cshtml" />
     <None Include="Views\Tests\Typography.cshtml" />
     <None Include="Views\Tests\Buttons.cshtml" />
     <None Include="Views\Tests\Dropdowns.cshtml" />
