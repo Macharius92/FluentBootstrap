@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>FluentBootstrap.Mvc.T4MVC</id>
+    <id>FluentBootstrap.Fork.Mvc.T4MVC</id>
     <version>$version$</version>
     <title>FluentBootstrap.Mvc.T4MVC</title>
-    <authors>Dave Glick</authors>
-    <owners>Dave Glick</owners>
-    <licenseUrl>https://github.com/somedave/FluentBootstrap/blob/master/license.txt</licenseUrl>
-	  <iconUrl>http://fluentbootstrap.com/Content/fb-icon.png</iconUrl>
-    <projectUrl>http://fluentbootstrap.com</projectUrl>
+    <authors>Dave Glick, Matthieu Chomienne</authors>
+    <owners>Matthieu Chomienne</owners>
+    <licenseUrl>https://github.com/Macharius92/FluentBootstrap/blob/master/license.txt</licenseUrl>
+	<iconUrl>http://fluentbootstrap.com/Content/fb-icon.png</iconUrl>
+    <projectUrl>https://github.com/Macharius92/FluentBootstrap/blob/master/readme.md</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Support for T4MVC with FluentBootstrap and ASP.NET MVC.</description>
-    <copyright>Copyright 2015</copyright>
+    <copyright>Copyright 2018</copyright>
     <tags>Bootstrap AspNet Mvc AspNetMvc T4MVC</tags>
   </metadata>
 </package>

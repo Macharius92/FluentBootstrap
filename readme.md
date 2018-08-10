@@ -1,10 +1,14 @@
-# FluentBootstrap
+# FluentBootstrap.Fork
 
-## ** Looking For A Maintainer **
+This project is a fork of the original FluentBootstrap by Dave Glick. I started to use it in one of my personal project and needed some evolutions. And the fork was born.
+You won't find any more documentation for now than the one available on the original project site at http://www.fluentbootstrap.com
 
-This project isn't "dead", but at the same time I won't be doing much more to it beyond fixing bugs. It's complete and production-worthy but my personal interests have shifted more towards code generation ([scripting](https://github.com/daveaglick/Scripty), [static sites](http://wyam.io), etc.) and I am unable to give this project the attention it deserves going forward. If you're interested in taking over, please drop me a line by opening an issue.
-
-This fork of the original FluentBootstrap is my first try with Git.
+- [Overview](#overview)
+- [Status](#status)
+- [Example](#example)
+- [What's new](#whats-new)
+- [Download](#download)
+- [More Information](#more-information)
 
 ## Overview
 
@@ -12,11 +16,11 @@ FluentBootstrap provides extensions, helper classes, model binding, and other go
 
 ## Status
 
-[![BuildAppVeyor](https://img.shields.io/appveyor/ci/DaveGlick/fluentbootstrap.svg?style=flat-square&label=AppVeyor%20Build)](http://www.nuget.org/packages/FluentBootstrap/)<br />
-[![FluentBootstrapNuGet](https://img.shields.io/nuget/v/FluentBootstrap.svg?style=flat-square&label=FluentBootstrap)](http://www.nuget.org/packages/FluentBootstrap/)<br />
-[![FluentBootstrapWebPagesNuGet](https://img.shields.io/nuget/v/FluentBootstrap.WebPages.svg?style=flat-square&label=FluentBootstrap.WebPages)](http://www.nuget.org/packages/FluentBootstrap.WebPages/) <br />
-[![FluentBootstrapMvcNuGet](https://img.shields.io/nuget/v/FluentBootstrap.Mvc.svg?style=flat-square&label=FluentBootstrap.Mvc)](http://www.nuget.org/packages/FluentBootstrap.Mvc/) <br />
-[![FluentBootstrapMvcT4MVCNuGet](https://img.shields.io/nuget/v/FluentBootstrap.Mvc.T4MVC.svg?style=flat-square&label=FluentBootstrap.Mvc.T4MVC)](http://www.nuget.org/packages/FluentBootstrap.Mvc.T4MVC/) 
+[![Build status](https://macharius.visualstudio.com/FluentBootstrap/_apis/build/status/FluentBootstrap-Build?branch=master)](http://www.nuget.org/packages/FluentBootstrap.Fork/)]<br />
+[![FluentBootstrapNuGet](https://img.shields.io/nuget/v/FluentBootstrap.Fork.svg?style=flat-square&label=FluentBootstrap)](http://www.nuget.org/packages/FluentBootstrap.Fork/)<br />
+[![FluentBootstrapWebPagesNuGet](https://img.shields.io/nuget/v/FluentBootstrap.Fork.WebPages.svg?style=flat-square&label=FluentBootstrap.WebPages)](http://www.nuget.org/packages/FluentBootstrap.Fork.WebPages/) <br />
+[![FluentBootstrapMvcNuGet](https://img.shields.io/nuget/v/FluentBootstrap.Fork.Mvc.svg?style=flat-square&label=FluentBootstrap.Mvc)](http://www.nuget.org/packages/FluentBootstrap.Fork.Mvc/) <br />
+[![FluentBootstrapMvcT4MVCNuGet](https://img.shields.io/nuget/v/FluentBootstrap.Fork.Mvc.T4MVC.svg?style=flat-square&label=FluentBootstrap.Mvc.T4MVC)](http://www.nuget.org/packages/FluentBootstrap.fork.Mvc.T4MVC/) 
 
 ## Example
 
@@ -61,17 +65,23 @@ By writing this (for example, if using from an ASP.NET MVC view):
 }
 ```
 
+## What's new
+
+### Version 3.3.7.0
+* Upgraded to Bootstrap 3.3.7
+* Added support for FontAwesome 4.7.0
+
 ## Download
 
 The easiest way to download is via NuGet:
 ```
-Install-Package FluentBootstrap
+Install-Package FluentBootstrap.Fork
 ```
 
 If you're using FluentBootstrap with ASP.NET MVC:
 ```
-Install-Package FluentBootstrap.Mvc
+Install-Package FluentBootstrap.Fork.Mvc
 ```
 
 ## More Information
-Please see the project site at http://www.fluentbootstrap.com for more information, installation instructions, and code examples.
+Please see the original project site at http://www.fluentbootstrap.com for more information, installation instructions, and code examples.
