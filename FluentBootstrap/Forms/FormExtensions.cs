@@ -70,6 +70,18 @@ namespace FluentBootstrap
             return builder;
         }
 
+        public static ComponentBuilder<TConfig, TForm> SetMultipart<TConfig, TForm>(this ComponentBuilder<TConfig, TForm> builder, bool multipart = true)
+            where TConfig : BootstrapConfig
+            where TForm : Form
+        {
+            if (multipart)
+            {
+                builder.Component.MergeAttribute("enctype", "multipart/form-data");
+            }
+            else builder.Component.MergeAttribute("enctype", string.Empty);
+            return builder;
+        }
+
         // FieldSet
 
         public static ComponentBuilder<TConfig, FieldSet> FieldSet<TConfig, TComponent>(this BootstrapHelper<TConfig, TComponent> helper)
@@ -133,9 +145,20 @@ namespace FluentBootstrap
             return builder;
         }
 
+        public static ComponentBuilder<TConfig, FormGroup> SetFeedback<TConfig>(this ComponentBuilder<TConfig, FormGroup> builder, IconFontAwesome icon)
+            where TConfig : BootstrapConfig
+        {
+            if (icon != IconFontAwesome.None)
+            {
+                builder.Component.ToggleCss(Css.HasFeedback, true);
+                builder.Component.IconFontAwesome = icon;
+            }
+            return builder;
+        }
+
         // ControlLabel
 
-        public static ComponentBuilder<TConfig, ControlLabel> ControlLabel<TConfig, TComponent>(this BootstrapHelper<TConfig, TComponent> helper, string text, string labelFor = null)
+        public static ComponentBuilder<TConfig, ControlLabel> ControlLabel<TConfig, TComponent>(this BootstrapHelper<TConfig, TComponent> helper, object text, string labelFor = null)
             where TConfig : BootstrapConfig
             where TComponent : Component, ICanCreate<ControlLabel>
         {
@@ -201,6 +224,17 @@ namespace FluentBootstrap
             {
                 builder.Component.ToggleCss(Css.HasFeedback, true);
                 builder.Component.Icon = icon;
+            }
+            return builder;
+        }
+
+        public static ComponentBuilder<TConfig, Input> SetFeedback<TConfig>(this ComponentBuilder<TConfig, Input> builder, IconFontAwesome icon)
+            where TConfig : BootstrapConfig
+        {
+            if (icon != IconFontAwesome.None)
+            {
+                builder.Component.ToggleCss(Css.HasFeedback, true);
+                builder.Component.IconFontAwesome = icon;
             }
             return builder;
         }
@@ -344,7 +378,7 @@ namespace FluentBootstrap
             return builder;
         }
 
-        public static ComponentBuilder<TConfig, SelectOption> SelectOption<TConfig, TComponent>(this BootstrapHelper<TConfig, TComponent> helper, string text, string value = null, bool selected = false)
+        public static ComponentBuilder<TConfig, SelectOption> SelectOption<TConfig, TComponent>(this BootstrapHelper<TConfig, TComponent> helper, object text, string value = null, bool selected = false)
             where TConfig : BootstrapConfig
             where TComponent : Component, ICanCreate<SelectOption>
         {
@@ -448,7 +482,7 @@ namespace FluentBootstrap
 
         // Help
 
-        public static ComponentBuilder<TConfig, HelpBlock> HelpBlock<TConfig, TComponent>(this BootstrapHelper<TConfig, TComponent> helper, string text = null)
+        public static ComponentBuilder<TConfig, HelpBlock> HelpBlock<TConfig, TComponent>(this BootstrapHelper<TConfig, TComponent> helper, object text = null)
             where TConfig : BootstrapConfig
             where TComponent : Component, ICanCreate<HelpBlock>
         {
@@ -457,7 +491,7 @@ namespace FluentBootstrap
 
         // FormControl
 
-        public static ComponentBuilder<TConfig, TFormControl> SetControlLabel<TConfig, TFormControl>(this ComponentBuilder<TConfig, TFormControl> builder, string label, Action<ComponentBuilder<TConfig, ControlLabel>> labelAction = null)
+        public static ComponentBuilder<TConfig, TFormControl> SetControlLabel<TConfig, TFormControl>(this ComponentBuilder<TConfig, TFormControl> builder, object label, Action<ComponentBuilder<TConfig, ControlLabel>> labelAction = null)
             where TConfig : BootstrapConfig
             where TFormControl : FormControl
         {

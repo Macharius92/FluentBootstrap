@@ -208,9 +208,9 @@ namespace FluentBootstrap.Tests
    <div class=""form-group"">
     <label for=""Select"" class=""control-label"">Select</label>
     <select name=""Select"" id=""Select"" class=""form-control"">
-     <option>Option A
-     <option>Option B
-     <option>Option C
+     <option>Option A</option>
+     <option>Option B</option>
+     <option>Option C</option>
     </select>
    </div>
    <div class=""form-group"">
@@ -228,9 +228,9 @@ namespace FluentBootstrap.Tests
    <div class=""form-group"">
     <label for=""Select"" class=""control-label"">Select</label>
     <select name=""Select"" id=""Select"" class=""form-control"">
-     <option value=""A"">Option A
-     <option value=""B"" selected=""selected"">Option B
-     <option value=""C"">Option C
+     <option value=""A"">Option A</option>
+     <option value=""B"" selected=""selected"">Option B</option>
+     <option value=""C"">Option C</option>
     </select>
    </div>
    <div class=""form-group"">
@@ -248,9 +248,9 @@ namespace FluentBootstrap.Tests
    <div class=""form-group"">
     <label for=""Select"" class=""control-label"">Select</label>
     <select name=""Select"" id=""Select"" class=""form-control"">
-     <option value=""A"">Option A
-     <option value=""B"" selected=""selected"">Option B
-     <option value=""C"">Option C
+     <option value=""A"">Option A</option>
+     <option value=""B"" selected=""selected"">Option B</option>
+     <option value=""C"">Option C</option>
     </select>
    </div>
    <div class=""form-group"">

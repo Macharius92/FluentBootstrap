@@ -122,10 +122,11 @@ namespace FluentBootstrap.Tests
     <label for=""PropD"" class=""control-label"">PropD</label>
     <div class=""checkbox"">
      <label class=""checkbox"">
-      <input type=""checkbox"" name=""PropD"" id=""PropD"">
+      <input type=""checkbox"" name=""PropD"" value=""False"" id=""PropD"">
      </label>
     </div>
    </div>
+   <input type=""hidden"" name=""PropD"" value=""False"">
   </form>");
         }
 
@@ -167,9 +168,9 @@ namespace FluentBootstrap.Tests
    <div class=""form-group"">
     <label for=""PropC"" class=""control-label"">PropC</label>
     <select name=""PropC"" id=""PropC"" class=""form-control"">
-     <option value=""One"">1
-     <option value=""Two"">2
-     <option value=""Three"">3
+     <option value=""One"">1</option>
+     <option value=""Two"">2</option>
+     <option value=""Three"">3</option>
     </select>
    </div>
   </form>");
@@ -184,9 +185,9 @@ namespace FluentBootstrap.Tests
    <div class=""form-group"">
     <label for=""PropC"" class=""control-label"">PropC</label>
     <select name=""PropC"" id=""PropC"" class=""form-control"">
-     <option value=""One"">1
-     <option value=""Two"">2
-     <option value=""Three"">3
+     <option value=""One"">1</option>
+     <option value=""Two"">2</option>
+     <option value=""Three"">3</option>
     </select>
    </div>
   </form>");

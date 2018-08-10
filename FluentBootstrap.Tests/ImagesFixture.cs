@@ -32,5 +32,18 @@ namespace FluentBootstrap.Tests
             TestHelper.AssertHtml<ASP._Views_Tests_Images_cshtml>("test-placeholder",
 @"<a href=""http://www.google.com""><img alt=""This is my placeholder"" src=""http://placehold.it/200x40/800000/CC0000&amp;text=Placeholder!""></a>");
         }
+
+        [Test]
+        public void PlaceholderOnlyTextColorProducesException()
+        {
+            TestHelper.AssertException<ASP._Views_Tests_ImagesException1_cshtml, InvalidOperationException>();
+        }
+
+        [Test]
+        public void PlaceholderWithFormatProducesCorrectHtml()
+        {
+            TestHelper.AssertHtml<ASP._Views_Tests_Images_cshtml>("test-placeholder-with-format",
+                @"<a href=""http://www.google.com""><img alt=""This is my placeholder"" src=""http://placehold.it/200x40/800000/CC0000.FORMAT&amp;text=Placeholder!""></a>");
+        }
     }
 }

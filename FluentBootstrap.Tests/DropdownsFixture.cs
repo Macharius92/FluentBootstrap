@@ -84,6 +84,27 @@ namespace FluentBootstrap.Tests
         }
 
         [Test]
+        public void LeftMenuDropdownProducesCorrectHtml()
+        {
+            TestHelper.AssertHtml<ASP._Views_Tests_Dropdowns_cshtml>("test-left-menu",
+                @"<div class=""dropdown"">
+   <button type=""button"" data-toggle=""dropdown"" class=""btn dropdown-toggle btn-default"">Left 
+    <span class=""caret""></span>
+   </button>
+   <ul role=""menu"" class=""dropdown-menu dropdown-menu-left"">
+    <li role=""presentation"" class=""dropdown-header"">Header</li>
+    <li role=""separator"" class=""divider""></li>
+    <li role=""presentation"">
+     <a role=""menuitem"" href=""#"">A</a>
+    </li>
+    <li role=""presentation"">
+     <a role=""menuitem"" href=""http://www.google.com"">B</a>
+    </li>
+   </ul>
+  </div>");
+        }
+
+        [Test]
         public void DisabledDropdownLinkProducesCorrectHtml()
         {
             TestHelper.AssertHtml<ASP._Views_Tests_Dropdowns_cshtml>("test-disabled",

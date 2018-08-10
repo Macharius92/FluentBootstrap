@@ -131,4 +131,61 @@
             }
         }
     }
+
+    <hr />
+
+    @Html.Bootstrap().Heading1("Standard Navbar Button")
+    using (Html.Bootstrap().Div().SetId("test-standard-navbar-button").Begin())
+    {
+        using (var navbar = Html.Bootstrap().Navbar("MyApp").SetId("nav8").Begin())
+        {
+            @navbar.NavbarButton("Warn").SetState(ButtonState.Warning)
+            @navbar.NavbarLink("B").SetActive().SetDisabled().RenderIf(true)
+        }
+    }
+
+    <hr />
+
+    @Html.Bootstrap().Heading1("Standard Navbar Text")
+    using (Html.Bootstrap().Div().SetId("test-standard-navbar-text").Begin())
+    {
+        using (var navbar = Html.Bootstrap().Navbar("MyApp").SetId("nav9").Begin())
+        {
+            using (navbar.NavbarText().SetLeft().SetRight().Begin())
+            {
+                <text>Logged in as @Html.Bootstrap().Link("Dave")</text>
+            }
+        }
+    }
+
+    <hr />
+
+    @Html.Bootstrap().Heading1("Standard Navbar Form")
+    using (Html.Bootstrap().Div().SetId("test-standard-navbar-form").Begin())
+    {
+        using (var navbar = Html.Bootstrap().Navbar("MyApp").SetId("nav10").Begin())
+        {
+            using (var form = navbar.NavbarForm().Begin())
+            {
+                @form.Input("Search").SetPlaceholder("Search").SetFeedback(IconFontAwesome.Facebook)
+                @form.Submit("Submit")
+                @form.FieldSet()
+                @form.HelpBlock()
+                @form.Static()
+            }
+        }
+    }
+
+    <hr />
+
+    @Html.Bootstrap().Heading1("Standard Navbar Toggle")
+    using (Html.Bootstrap().Div().SetId("test-standard-navbar-toggle").Begin())
+    {
+        using (var navbar = Html.Bootstrap().Navbar().SetId("nav11").Begin())
+        {
+            @navbar.NavbarToggle().SetDataTarget("#nav11-collapse").SetHamburger()
+            @navbar.NavbarLink("A")
+            @navbar.NavbarLink("B")
+        }
+    }
 }

@@ -55,5 +55,44 @@ namespace FluentBootstrap.Tests
    </h1>
   </div>");
         }
+
+        [Test]
+        public void NavbarWithItems1ProducesCorrectHtml()
+        {
+            TestHelper.AssertHtml<ASP._Views_Tests_Misc_cshtml>("test-navbar-with-items1",
+            @"<nav role=""navigation"" id=""navbar"" class=""navbar navbar-default"">
+   <div class=""container-fluid"">
+    <div id=""navbar-collapse"" class=""navbar-collapse collapse"">
+     <ul class=""nav navbar-nav navbar-left"">
+      <li class=""dropdown""><a href=""#"" data-toggle=""dropdown"" class=""dropdown-toggle navbar-link"">Dropdown 
+       <span class=""caret""></span></a>
+       <ul role=""menu"" class=""dropdown-menu"">
+        <li role=""presentation"">
+         <a role=""menuitem"" href=""#"">A</a>
+        </li>
+        <li role=""presentation"">
+         <a role=""menuitem"" href=""#"">B</a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href=""#"">A</a>
+      </li>
+      <li>
+       <a href=""#"">B</a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class=""navbar-header"">
+    <button type=""button"" data-toggle=""collapse"" aria-expanded=""false"" data-target=""#navbar-collapse"" class=""navbar-toggle collapsed"">
+     <span class=""sr-only"">Toggle Navigation</span>
+     <span class=""icon-bar""></span>
+     <span class=""icon-bar""></span>
+     <span class=""icon-bar""></span>
+    </button>
+   </div>
+  </nav>");
+        }
     }
 }

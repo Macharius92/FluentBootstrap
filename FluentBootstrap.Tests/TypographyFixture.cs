@@ -133,5 +133,18 @@ namespace FluentBootstrap.Tests
    <dd>Two</dd>
   </dl>");
         }
+
+        [Test]
+        public void MultiTypoProducesCorrectHtml()
+        {
+            TestHelper.AssertHtml<ASP._Views_Tests_Typography_cshtml>("test-typo-items",
+@"<abbr title=""Title"" class=""initialism"">Text</abbr>
+  <cite title=""Title"">Text</cite>
+  <blockquote class=""blockquote-reverse"">
+   <p>Mon cul</p>
+   <footer>Toto</footer>
+  </blockquote>
+  <pre>Coucou</pre>");
+        }
     }
 }

@@ -1,0 +1,16 @@
+﻿@using System.Web.Instrumentation
+@using FluentBootstrap;
+
+@using (Html.Bootstrap().Container().Begin())
+{
+    @Html.Bootstrap().Heading1("Simple Panel")
+    using (Html.Bootstrap().Div().SetId("test-simple-panel").Begin())
+    {
+        using (var panel = Html.Bootstrap().Panel("My Test Title", 3).SetState(PanelState.Success).Begin())
+        {
+            @panel.PanelBody().AddContent("My Test Body")
+            @panel.PanelTable().AddContent("My Test Panel Table")
+            @panel.PanelFooter().AddContentAtEnd("My Test Footer")
+        }
+    }
+}

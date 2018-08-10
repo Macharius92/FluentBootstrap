@@ -24,4 +24,12 @@
     {
         @Html.Bootstrap().Placeholder(200, 40).SetText("Placeholder!").SetColors("#800000", "CC0000").SetHref("http://www.google.com").SetAlt("This is my placeholder")
     }
+
+    <hr />
+
+    @Html.Bootstrap().Heading1("Placeholder With Format")
+    using (Html.Bootstrap().Div().SetId("test-placeholder-with-format").Begin())
+    {
+        @Html.Bootstrap().Placeholder(200, 40).SetText("Placeholder!").SetColors("#800000", "CC0000").SetHref("http://www.google.com").SetAlt("This is my placeholder").SetFormat("FORMAT")
+    }
 }
