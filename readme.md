@@ -16,7 +16,6 @@ FluentBootstrap provides extensions, helper classes, model binding, and other go
 
 ## Status
 
-[![Build status](https://macharius.visualstudio.com/FluentBootstrap/_apis/build/status/FluentBootstrap-Build?branch=master)](http://www.nuget.org/packages/FluentBootstrap.Fork/)]<br />
 [![FluentBootstrapNuGet](https://img.shields.io/nuget/v/FluentBootstrap.Fork.svg?style=flat-square&label=FluentBootstrap)](http://www.nuget.org/packages/FluentBootstrap.Fork/)<br />
 [![FluentBootstrapWebPagesNuGet](https://img.shields.io/nuget/v/FluentBootstrap.Fork.WebPages.svg?style=flat-square&label=FluentBootstrap.WebPages)](http://www.nuget.org/packages/FluentBootstrap.Fork.WebPages/) <br />
 [![FluentBootstrapMvcNuGet](https://img.shields.io/nuget/v/FluentBootstrap.Fork.Mvc.svg?style=flat-square&label=FluentBootstrap.Mvc)](http://www.nuget.org/packages/FluentBootstrap.Fork.Mvc/) <br />
