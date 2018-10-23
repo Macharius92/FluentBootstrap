@@ -40,6 +40,13 @@ namespace FluentBootstrap
             return builder;
         }
 
+        public static ComponentBuilder<TConfig, Dropdown> SetScrollable<TConfig>(this ComponentBuilder<TConfig, Dropdown> builder, bool active = true)
+            where TConfig : BootstrapConfig
+        {
+            builder.Component.Scrollable = active;
+            return builder;
+        }
+
         public static ComponentBuilder<TConfig, Dropdown> SetDropup<TConfig>(this ComponentBuilder<TConfig, Dropdown> builder, bool dropup = true)
             where TConfig : BootstrapConfig
         {

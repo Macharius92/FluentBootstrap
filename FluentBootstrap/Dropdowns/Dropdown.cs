@@ -26,6 +26,7 @@ namespace FluentBootstrap.Dropdowns
         public bool Caret { get; set; }
         public bool MenuRight { get; set; }
         public bool MenuLeft { get; set; }
+        public bool Scrollable { get; set; }
 
         internal Dropdown(BootstrapHelper helper)
             : base(helper, "div", Css.Dropdown, Css.BtnDefault)
@@ -107,6 +108,7 @@ namespace FluentBootstrap.Dropdowns
             {
                 _list.AddCss(Css.DropdownMenuLeft);
             }
+            if (Scrollable) _list.AddCss(Css.PreScrollable);
 
             // Start this component
             base.OnStart(_inputGroupButton ? new SuppressOutputWriter() : writer);
